@@ -1,0 +1,15 @@
+#ifndef _HITCHECK_H_
+#define _HITCHECK_H_
+
+//*****************************************************************************
+//インクルードファイル
+//*****************************************************************************
+#include "renderer.h"
+
+//*****************************************************************************
+//プロトタイプ宣言
+//*****************************************************************************
+bool EllipsCheck(D3DXVECTOR3 pos1,D3DXVECTOR3 pos2,float fHalfSize1,float fHalfSize2);													//円形を使った当たり判定
+bool CubeCheck(D3DXVECTOR3 pos1,D3DXVECTOR3 pos2,float fSizeX1,float fSizeY1,float fSizeZ1,float fSizeX2,float fSizeY2,float fSizeZ2);	//立方体を使った当たり判定
+#endif
+//EOF
